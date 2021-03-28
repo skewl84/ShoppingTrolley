@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{42794552-7DC5-4DC5-A90F-D3B60BF570E8}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{DFD3F77B-E0FC-4B84-8854-B00A768AAEE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.Application", "Src\ShoppingTrolley.Application\ShoppingTrolley.Application.csproj", "{C1E7879B-6FB9-4C43-8C92-5042ADA6326A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.Domain", "Src\ShoppingTrolley.Domain\ShoppingTrolley.Domain.csproj", "{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E3AB6A4E-1BB3-412E-AA58-3F519472CB22}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.Application.UnitTests", "Tests\ShoppingTrolley.Application.UnitTests\ShoppingTrolley.Application.UnitTests.csproj", "{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.Infrastructure", "Src\ShoppingTrolley.Persistence\ShoppingTrolley.Infrastructure.csproj", "{60C97465-8CF4-487E-A65C-F5075B6A9E07}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.API", "Src\ShoppingTrolley.API\ShoppingTrolley.API.csproj", "{90129921-9526-452B-BF1D-0D6C69AAF3BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingTrolley.API.IntegrationTests", "Tests\ShoppingTrolley.API.IntegrationTests\ShoppingTrolley.API.IntegrationTests.csproj", "{3CCBD3C9-046E-4D55-A292-07788E4BC0A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CI", "CI", "{6B3DC05F-C52F-4104-A2E9-1D6DF3C929D3}"
+	ProjectSection(SolutionItems) = preProject
+		CI\pgp-mapper-code-build.yaml = CI\pgp-mapper-code-build.yaml
+		CI\pgp-mapper-component-stack.yaml = CI\pgp-mapper-component-stack.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "buildspec", "buildspec", "{B732A98C-300D-4EB1-8661-D63FBBA48097}"
+	ProjectSection(SolutionItems) = preProject
+		CI\buildspec\pgp_mapper_build.yaml = CI\buildspec\pgp_mapper_build.yaml
+		CI\buildspec\pgp_mapper_deploy.sh = CI\buildspec\pgp_mapper_deploy.sh
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1E7879B-6FB9-4C43-8C92-5042ADA6326A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1E7879B-6FB9-4C43-8C92-5042ADA6326A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1E7879B-6FB9-4C43-8C92-5042ADA6326A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1E7879B-6FB9-4C43-8C92-5042ADA6326A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60C97465-8CF4-487E-A65C-F5075B6A9E07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60C97465-8CF4-487E-A65C-F5075B6A9E07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60C97465-8CF4-487E-A65C-F5075B6A9E07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60C97465-8CF4-487E-A65C-F5075B6A9E07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90129921-9526-452B-BF1D-0D6C69AAF3BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90129921-9526-452B-BF1D-0D6C69AAF3BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90129921-9526-452B-BF1D-0D6C69AAF3BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90129921-9526-452B-BF1D-0D6C69AAF3BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CCBD3C9-046E-4D55-A292-07788E4BC0A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CCBD3C9-046E-4D55-A292-07788E4BC0A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CCBD3C9-046E-4D55-A292-07788E4BC0A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CCBD3C9-046E-4D55-A292-07788E4BC0A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C1E7879B-6FB9-4C43-8C92-5042ADA6326A} = {DFD3F77B-E0FC-4B84-8854-B00A768AAEE5}
+		{1E390FF0-C5A8-4ABA-9075-7B11F1A7349C} = {DFD3F77B-E0FC-4B84-8854-B00A768AAEE5}
+		{C607AEEB-1AAA-4F1B-BE14-5C94A6C8E78D} = {E3AB6A4E-1BB3-412E-AA58-3F519472CB22}
+		{60C97465-8CF4-487E-A65C-F5075B6A9E07} = {DFD3F77B-E0FC-4B84-8854-B00A768AAEE5}
+		{90129921-9526-452B-BF1D-0D6C69AAF3BD} = {DFD3F77B-E0FC-4B84-8854-B00A768AAEE5}
+		{3CCBD3C9-046E-4D55-A292-07788E4BC0A9} = {E3AB6A4E-1BB3-412E-AA58-3F519472CB22}
+		{6B3DC05F-C52F-4104-A2E9-1D6DF3C929D3} = {42794552-7DC5-4DC5-A90F-D3B60BF570E8}
+		{B732A98C-300D-4EB1-8661-D63FBBA48097} = {6B3DC05F-C52F-4104-A2E9-1D6DF3C929D3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5BC30ED0-E77B-4AB2-A40B-D20DBB78EA0D}
+	EndGlobalSection
+EndGlobal
