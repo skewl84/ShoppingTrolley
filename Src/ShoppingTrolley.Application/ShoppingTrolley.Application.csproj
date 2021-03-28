@@ -5,16 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Commands\ShoppingCarts\CalculateTotalPrice\**" />
-    <EmbeddedResource Remove="Commands\ShoppingCarts\CalculateTotalPrice\**" />
-    <None Remove="Commands\ShoppingCarts\CalculateTotalPrice\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="ViewModels\TotalPriceViewModel.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
     <PackageReference Include="FluentValidation" Version="8.6.3" />
     <PackageReference Include="MediatR" Version="9.0.0" />

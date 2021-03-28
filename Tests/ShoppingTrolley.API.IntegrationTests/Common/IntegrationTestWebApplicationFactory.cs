@@ -8,7 +8,6 @@ using ShoppingTrolley.Domain.Entities.Promotion;
 using ShoppingTrolley.Domain.Enums;
 using ShoppingTrolley.Infrastructure.Persistence;
 using System;
-using System.Collections.Generic;
 
 namespace ShoppingTrolley.API.IntegrationTests.Common
 {
