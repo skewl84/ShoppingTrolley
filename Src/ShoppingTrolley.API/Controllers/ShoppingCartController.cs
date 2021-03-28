@@ -76,28 +76,5 @@ namespace ShoppingTrolley.API.Controllers
 
             return Ok(shoppingCartDetails);
         }
-
-        ///// <summary>
-        ///// Calculate total price of the shopping cart items
-        ///// </summary>
-        ///// <param name="command">Calculate total price command (requires shopping cart id).</param>
-        ///// <returns>Gets total price of the items in the shopping cart</returns>
-        ///// <response code="200">Returns a json object containing the total price, shopping cart id</response>
-        ///// <response code="400">A validation error has occurred or there was something wrong with the request.</response>
-        ///// <response code="404">The shopping cart cannot be found.</response>
-        ///// <response code="500">An error has occurred</response>
-        //[HttpPost]
-        //[Produces(typeof(TotalPriceViewModel))]
-        //[ProducesResponseType(typeof(TotalPriceViewModel), 200)]
-        //[ProducesResponseType(400)]
-        //[ProducesResponseType(404)]
-        //[ProducesResponseType(500)]
-        //[Route("calculatetotalprice")]
-        //public async Task<ActionResult<ShoppingCartViewModel>> CalculateTotalPrice([FromBody] CalculateTotalPriceCommand command)
-        //{
-        //    var totalPrice = await Mediator.Send(command);
-
-        //    return Ok(totalPrice);
-        //}
     }
 }
