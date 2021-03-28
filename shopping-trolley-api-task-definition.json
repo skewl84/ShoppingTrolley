@@ -52,7 +52,9 @@
         "readonlyRootFilesystem": null,
         "dockerLabels": null,
         "systemControls": null,
-        "privileged": null
+        "privileged": null,
+        "image": "",
+        "name": "shopping-trolley-api-v2"
       }
     ],
     "placementConstraints": [],
