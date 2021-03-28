@@ -27,6 +27,7 @@ on:
   push:
     paths-ignore:
       - '**.md'
+      - '**.github/workflows/*'
 
 name: Deploy to Amazon ECS
 
