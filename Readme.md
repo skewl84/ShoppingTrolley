@@ -14,7 +14,7 @@ This is an implementation of Shopping trolley API for a customer that supports t
 The application has been deployed to an AWS ECS cluster behind AWS ALB.
 Open API docs available here: http://shopping-trolley-alb-89335762.ap-southeast-2.elb.amazonaws.com/index.html
 ### Usage
-In order to use the api, we would need to seed the data via the following command
+In order to use the api, we would need to seed the data via the following command as in-memory database is being leveraged.
 ```
 curl --location --request POST 'http://shopping-trolley-alb-89335762.ap-southeast-2.elb.amazonaws.com/api/SeedData' \
 --header 'Content-Type: application/json' \
