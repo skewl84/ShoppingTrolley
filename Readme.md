@@ -20,6 +20,24 @@ curl --location --request POST 'http://shopping-trolley-alb-89335762.ap-southeas
 --header 'Content-Type: application/json' \
 --data-raw '{}'
 ```
+example payload response: 
+```
+{
+    "productIds": [
+        1,
+        2,
+        3,
+        4
+    ],
+    "customerIds": [
+        "84972bea-808f-4d7e-81cd-f8e9fae93221",
+        "b2c0e594-2968-4cd0-aa46-a90ab0a2cde4",
+        "bd029fa9-ae39-4ecc-8900-1ee78c90a90c",
+        "dacbe782-faf8-4759-aa30-146991cfabd8",
+        "422d360a-ce07-46ec-a010-3b408ef185cf"
+    ]
+}
+```
 
 ## Monitoring
 Monitoring dashboard available: [here](https://cloudwatch.amazonaws.com/dashboard.html?dashboard=Shopping-Trolley-Dashboard&context=eyJSIjoidXMtZWFzdC0xIiwiRCI6ImN3LWRiLTEwNTIxNDAyNTIwOSIsIlUiOiJ1cy1lYXN0LTFfa0xjeWxINVhJIiwiQyI6IjNob2tvZWhudmJhbGtzZWJsNWpnamdlZjhhIiwiSSI6InVzLWVhc3QtMToyNzE4N2QzMS0yODY3LTRlOTktYjE4NC04MTQwNjA2MDUwOTkiLCJNIjoiUHVibGljIn0=)
