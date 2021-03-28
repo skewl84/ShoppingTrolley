@@ -1,5 +1,5 @@
 # This workflow will build and push a new container image to Amazon ECR,
-# and then will deploy a new task definition to Amazon ECS, when a release is created
+# and then will deploy a new task definition to Amazon ECS, for every commit
 #
 # To use this workflow, you will need to complete the following set-up steps:
 #
@@ -23,9 +23,7 @@
 #    See the documentation for each action used below for the recommended IAM policies for this IAM user,
 #    and best practices on handling the access key credentials.
 
-on:
-  release:
-    types: [created]
+on: push
 
 name: Deploy to Amazon ECS
 
@@ -69,7 +67,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: shopping-trolley-api-task-definition.json
-        container-name: shopping-trolley-app
+        container-name:  shopping-trolley-api-v2
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
