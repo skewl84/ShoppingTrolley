@@ -67,7 +67,7 @@ jobs:
       uses: aws-actions/amazon-ecs-render-task-definition@v1
       with:
         task-definition: shopping-trolley-api-task-definition.json
-        container-name: shopping-trolley-app
+        container-name:  shopping-trolley-api-v2
         image: ${{ steps.build-image.outputs.image }}
 
     - name: Deploy Amazon ECS task definition
