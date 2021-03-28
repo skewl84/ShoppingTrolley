@@ -7,9 +7,19 @@ This is an implementation of Shopping trolley API for a customer that supports t
 - Removing an item to the shopping trolley
 - View the items in the shopping trolley including total price and discounted price
 
+## Design considerations
+- To express that a shopping cart _may not_ exist without a customer entity, customerId is an required attribute for adding or removing items from a shopping cart while this could have been done simply by supplying the shopping cart id in realistic scenario
+
 ## Demo
 The application has been deployed to an AWS ECS cluster behind AWS ALB.
 Open API docs available here: http://shopping-trolley-alb-89335762.ap-southeast-2.elb.amazonaws.com/index.html
+### Usage
+In order to use the api, we would need to seed the data via the following command
+```
+curl --location --request POST 'http://shopping-trolley-alb-89335762.ap-southeast-2.elb.amazonaws.com/api/SeedData' \
+--header 'Content-Type: application/json' \
+--data-raw '{}'
+```
 
 ## Monitoring
 Monitoring dashboard available: [here](https://cloudwatch.amazonaws.com/dashboard.html?dashboard=Shopping-Trolley-Dashboard&context=eyJSIjoidXMtZWFzdC0xIiwiRCI6ImN3LWRiLTEwNTIxNDAyNTIwOSIsIlUiOiJ1cy1lYXN0LTFfa0xjeWxINVhJIiwiQyI6IjNob2tvZWhudmJhbGtzZWJsNWpnamdlZjhhIiwiSSI6InVzLWVhc3QtMToyNzE4N2QzMS0yODY3LTRlOTktYjE4NC04MTQwNjA2MDUwOTkiLCJNIjoiUHVibGljIn0=)
